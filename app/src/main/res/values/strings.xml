@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Harvard Medical Dictionary</string>
+
+    <string name="company_name">Hamroh Technologies</string>
+    <string name="app_info">"The Harvard Medical Dictionary is an up-to-date medical dictionary that includes over 3,000 Harvard Health Terms. Designed for multiple networks, this app allows you to browse medical terms, newsletters, and articles. There is a detailed translation and definition of each word and phrase."</string>
+    <string name="socials">Social links:</string>
+    <string name="ratings">Rating</string>
+    <string name="app_version">1.0.0</string>
+</resources>

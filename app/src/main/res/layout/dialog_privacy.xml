@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/titleTextView"
+            android:fontFamily="@font/proximanovaregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <!-- Introduction/Summary -->
+        <TextView
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanovaregular"
+            android:id="@+id/introductionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your app's privacy introduction or summary goes here."
+            android:paddingBottom="16dp"/>
+
+        <!-- Data Collection -->
+        <TextView
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanovaregular"
+            android:id="@+id/dataCollectionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Collection:\n- Point 1\n- Point 2\n- Point 3"
+            android:paddingBottom="16dp"/>
+
+        <!-- Information Usage -->
+        <TextView
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanovaregular"
+            android:id="@+id/informationUsageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information Usage:\n- Point 1\n- Point 2\n- Point 3"
+            android:paddingBottom="16dp"/>
+
+        <!-- User Choices -->
+        <TextView
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanovaregular"
+            android:id="@+id/userChoicesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Choices:\n- Point 1\n- Point 2\n- Point 3"
+            android:paddingBottom="16dp"/>
+
+        <!-- Contact Information -->
+        <TextView
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanovaregular"
+            android:id="@+id/contactInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Information:\n- Your Company Name\n- Email: example@example.com\n- Address: Your Address"
+            android:paddingBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

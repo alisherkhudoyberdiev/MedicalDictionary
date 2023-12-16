@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/your_color"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/closeButton"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="9"
+            android:text="Dictionary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/proximanovaregular"
+            android:textSize="24sp"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/copyButton"
+            android:src="@drawable/ic_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/shareButton"
+            android:src="@drawable/ic_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:minWidth="300dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingRight="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/wordTextView"
+                android:text="Kyuriy"
+                android:layout_weight="12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#0c2b5c"
+                android:fontFamily="@font/proximanovaregular"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:minWidth="300dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/proximanovaregular"
+                        android:text="Bu elementni 1944-yilda Glen Siborg boshchiligidagi Amerikalik fiziklar guruhi tomonidan, plutoniyni geliy yadrolari bilan bombardimon qilish orqali olingan. Olingan yangi kimyoviy elementni olimlar radioaktivlik hodisasining kashfiyotchisi Mariya Kyuri sharafiga uning familiyasi bilan atashga qaror qilishgan. Mazkur element formulasida (Cm) birinchi harf Kyurining familiyasini (Curie) ikkinchi harf, esa uning ismini (Mariya) bildiradi."
+                        android:id="@+id/definitionTextView"
+                        android:layout_width="match_parent"
+                        android:textColor="#0c2b5c"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/adLayout"
+            android:layout_width="match_parent"
+            tools:ignore="MergeRootFrame"
+            android:layout_height="match_parent">
+
+            <!-- AdView -->
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9659191034479161/2163650408">
+            </com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
